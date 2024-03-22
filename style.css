@@ -1190,7 +1190,6 @@ header {
 }
 
 .footer-logo {
-    margin-top: -35px;
     margin-bottom: 40px;
 }
 
@@ -1213,6 +1212,10 @@ header {
 }
 
 @media screen and (max-width: 861px) and (min-width: 638px) {
+    .footer-logo {
+        margin-top: -35px;
+    }
+
     .footer-container {
         margin-left: 24px;
     }
@@ -1235,6 +1238,10 @@ header {
 }
 
 @media screen and (min-width: 861px) {
+    .footer-logo {
+        margin-top: -35px;
+    }
+
     .footer-container {
         margin-left: 124px;
     }
@@ -1292,7 +1299,59 @@ header {
         margin-left: 24.5px;
         margin-right: 140px;
     }
+
+    .espace-column {
+        padding-bottom: 40px;
+    }
+
+    .espace-column-last {
+        padding-bottom: -10px !important;
+    }
+
+    .footer-text-end-logo,
+    .footer-text,
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-telephone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-top: solid 1px;
+        margin-left: 24.5px;
+        margin-right: 24.5px;
+        border-color: #3c144164;
+    }
+    
+    .footer-logo-logo-telephone {
+        max-width: 190px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .group-telephone {
+        width: 155px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
 }
 
 @media screen and (min-width: 638px) {
+    .footer-logo-logo-telephone,
+    .footer-text-telephone,
+    .group-telephone,
+    .footer-telephone {
+        display: none;
+    }
+
+    .footer-text {
+        margin-bottom: 40px;
+    }
+}
+
+.footer-text-end-logo {
+    margin-top: -60px;
 }
