@@ -117,8 +117,8 @@ header {
 
   .bouton-first-style:active {
     background-position: 0%;
-    padding: 20px 36px;
-    border-radius: 16px;
+    padding: 18px 34px;
+    border-radius: 12px;
     background-image: -webkit-linear-gradient(30deg, #1f75ff 50%, transparent 50%);
     background-image: linear-gradient(30deg, #1f75ff 50%, transparent 50%);
     font-size: 17px;
@@ -149,8 +149,8 @@ header {
 
   .bouton-second-style:active {
     background-position: 0%;
-    padding: 20px 36px;
-    border-radius: 16px;
+    padding: 18px 34px;
+    border-radius: 12px;
     background-image: -webkit-linear-gradient(30deg, rgb(255, 235, 235) 50%, transparent 50%);
     background-image: linear-gradient(30deg, rgb(255, 235, 235) 50%, transparent 50%);
     font-size: 17px;
@@ -987,5 +987,146 @@ header {
 
     .fifth-section-wrapper-container-middle {
         margin-bottom: 8px;
+    }
+}
+
+.sixth-section {
+    width: 1440px;
+	margin: 0px auto;
+    background-color: #1362DD;
+    border-radius: 16px;
+    max-height: 629px;
+}
+
+.sixth-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sixth-section-wrapper-container-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 492px;
+}
+
+.sixth-section-wrapper-container-left-title {
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.sixth-section-wrapper-container-left-paragraph {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bouton-first-style-test {
+    border-radius: 4px;
+    background-color: #1362DD;
+    width: 271px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bouton-first-style-test {
+    color: #3C1441;
+    border: 1px solid #ffffff;
+    background-image: -webkit-linear-gradient(30deg, #ffffff 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #ffffff 50%, transparent 50%);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: all 450ms ease-in-out;
+  }
+  .bouton-first-style-test:hover {
+    background-position: 100%;
+    color: #ffffff;
+  }
+
+  .bouton-first-style-test:active {
+    background-position: 0%;
+    width: 280px;
+    height: 55px;
+    border-radius: 12px;
+    background-image: -webkit-linear-gradient(30deg, #1f75ff 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #1f75ff 50%, transparent 50%);
+    font-size: 17px;
+    margin-left: -5px;
+  }
+
+  @media screen and (max-width: 1456px) {
+    .sixth-section {
+        width: 98%;
+    }
+
+    .plein-logo {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .plein-logo {
+        margin-right: 0px;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    .plein-logo {
+        margin-right: 154.2px;
+    }
+}
+
+@media screen and (max-width: 861px) {
+    .sixth-section-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sixth-section {
+        max-height: none;
+    }
+
+    .sixth-section-wrapper-container-left {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 40px;
+    }
+
+    .sixth-section-wrapper-container-right {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    .bouton-first-style-test {
+        margin-bottom: 40px;
+        margin-left: 16px;
+        margin-right: 16px;
+        align-self: center;
+    }
+
+    .sixth-section-wrapper-container-right {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media screen and (min-width: 861px) {
+    .sixth-section-wrapper {
+        justify-content: space-between;
+    }
+  
+    .sixth-section-wrapper-container-left {
+        margin-left: 114px;
+        margin-top: 120px;
+    }
+
+    .sixth-section-wrapper-container-right {
+        margin-right: 114px;
     }
 }
