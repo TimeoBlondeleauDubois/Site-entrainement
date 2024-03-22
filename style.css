@@ -39,16 +39,6 @@
     text-decoration: underline;
 }
 
-header {
-    width: 1440px;
-	margin: 0px auto;
-    background-color: #ffffff;
-}
-
-.header-section {
-    display: flex;
-}
-
 .navbar .nav-links ul {
     display: flex;
 }
@@ -64,40 +54,73 @@ header {
     margin-left: 74px;
 }
 
-.header-left-wrapper {
-    background-color: #1362DD;
-    margin-left: 10px;
+
+
+.first-section {
+	width: 1440px;
+	margin: 0px auto;
+    display: flex;
+    background-color: red;
+    border-radius: 16px;
     margin-top: 10px;
-    border-bottom-left-radius: 16px;
-    border-top-left-radius: 16px;
-    min-width: 906px;
+    justify-content: space-between;
 }
 
-.header-right-wrapper {
-    margin-top: 10px;
+.first-section-wrapper {
+    display: flex;
 }
 
-.header-title {
-    font-size: 56px;
-    margin-left: 114px;
-    margin-top: 70px;
+.first-section-wrapper-right-container {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #EBEBFF;
+    width: 506px;
+    margin-right: 10px;
+    border-bottom-right-radius: 16px;
+    align-items: center;
+    border-top-right-radius: 16px;
 }
 
-.header-paragraph {
-    font-size: 18px;
-    margin-left: 114px;
+.first-section-title {
+    margin-top: 140px;
+    margin-bottom: 40px;
     color: white;
-    margin-top: 40px;
+    font-size: 40px;
+    margin-left: 114px;
+}
+
+.first-section-wrapper-left-container {
+    width: 906px;
+    background-color: #1362DD;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-left: 10px;
+}
+
+.first-section-paragraph {
     margin-bottom: 56px;
+    margin-left: 114px;
+}
+
+
+@media screen and (max-width: 1456px) {
+    .first-section {
+        width: 98%;
+    }
+}
+
+.first-section-bouton-container {
+    margin-bottom: 191px;
 }
 
 .bouton-first-style {
-    margin-left: 114px;
     padding: 16px 32px;
     border-radius: 4px;
     white-space: nowrap;
     background-color: #1362DD;
-    
+    margin-left: 114px;
 }
 
 .bouton-first-style {
@@ -109,23 +132,22 @@ header {
     background-repeat: no-repeat;
     background-position: 0%;
     transition: all 450ms ease-in-out;
-  }
-  .bouton-first-style:hover {
+}
+.bouton-first-style:hover {
     background-position: 100%;
     color: #ffffff;
-  }
+}
 
-  .bouton-first-style:active {
+.bouton-first-style:active {
     background-position: 0%;
     padding: 18px 34px;
     border-radius: 12px;
     background-image: -webkit-linear-gradient(30deg, #1f75ff 50%, transparent 50%);
     background-image: linear-gradient(30deg, #1f75ff 50%, transparent 50%);
     font-size: 17px;
-    margin-left: 105px;
-  }
+}
 
-  .bouton-second-style {
+.bouton-second-style {
     padding: 16px 32px;
     border-radius: 4px;
     white-space: nowrap;
@@ -141,50 +163,30 @@ header {
     background-repeat: no-repeat;
     background-position: 0%;
     transition: all 450ms ease-in-out;
-  }
-  .bouton-second-style:hover {
+}
+
+.bouton-second-style:hover {
     background-position: 100%;
     color: #3C1441;
-  }
+}
 
-  .bouton-second-style:active {
+.bouton-second-style:active {
     background-position: 0%;
     padding: 18px 34px;
     border-radius: 12px;
     background-image: -webkit-linear-gradient(30deg, rgb(255, 235, 235) 50%, transparent 50%);
     background-image: linear-gradient(30deg, rgb(255, 235, 235) 50%, transparent 50%);
     font-size: 17px;
-  }
-
-.header-bouton-section {
-    margin-bottom: 191px;
 }
 
-.header-right-wrapper {
-    text-align: center;
-}
-
-.header-right-wrapper-bottom {
-    background-color: #EBEBFF;
-    margin-left: 8px;
-    margin-top: -71px;
-    border-bottom-right-radius: 16px;
-}
-
-.header-right-wrapper-top {
-    margin-left: 8px;
-}
-
-.header-top-picture {
-    border-top-right-radius: 16px;
+.man-picture {
     clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 84%);
-    width: 100%;
-    min-height: 320px;
+    border-top-right-radius: 16px;
 }
 
-.header-bottom-picture {
-    width: 100%;
-    min-height: 367px;
+.tableau_picture {
+    margin-top: -50px;
+    max-width: 400px;
 }
 
 .main-section {
@@ -288,11 +290,7 @@ header {
 
 @media screen and (max-width: 1456px) {
     .main-section {
-        width: 100%;
-    }
-
-    header {
-        width: 100%;
+        width: 98%;
     }
 }
 
@@ -1131,6 +1129,7 @@ header {
 
     .bouton-first-style-test:active {
         margin-left: -5px;
+        margin-top: -2.5px;
       }
 }
 
