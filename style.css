@@ -70,9 +70,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #EBEBFF;
-    width: 506px;
-    margin-right: 10px;
     border-bottom-right-radius: 16px;
     align-items: center;
     border-top-right-radius: 16px;
@@ -205,6 +202,36 @@
     .first-section-wrapper-left-container {
         width: none;
     }
+
+    .first-section-wrapper-right-container {
+        width: none;
+        background-color: none;
+        margin-top: -62px;
+    }
+
+    .man-picture {
+        max-width: 98% !important;
+        width: 98% !important;
+    }
+
+    .tableau_picture {
+        background-color:  #EBEBFF;
+        padding-right: 9%;
+        padding-left: 9%;
+        margin-top: -10%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        max-width: 80% !important;
+        width: 80% !important;
+    }
+
+    .man-picture {
+        border-top-right-radius: none;
+    }
+
+
 }
 
 @media screen and (min-width: 1050px) {
@@ -230,8 +257,24 @@
     .first-section-bouton-container {
         margin-bottom: 191px;
     }
-}
 
+    .first-section-wrapper-right-container {
+        width: 506px;
+        background-color: #EBEBFF;
+    }
+
+    .tableau_picture {
+        max-width: 400px;
+    }
+
+    .man-picture {
+        border-top-right-radius: 16px;
+    }
+
+    .tableau_picture {
+        margin-top: -32.5px;
+    }
+}
 
 .bouton-first-style {
     padding: 16px 32px;
@@ -299,12 +342,6 @@
 
 .man-picture {
     clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 84%);
-    border-top-right-radius: 16px;
-}
-
-.tableau_picture {
-    margin-top: -32.5px;
-    max-width: 400px;
 }
 
 .main-section {
