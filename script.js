@@ -28,3 +28,22 @@ document.addEventListener('click', function(event) {
         sidebarContainer.style.right = '-450px';
     }
 });
+
+document.getElementById('openSidebars').addEventListener('click', function() {
+    var sidebarsContainer = document.getElementById('sidebarsContainer');
+    
+    if (sidebarsContainer.style.height === '0px' || sidebarsContainer.style.height === '') {
+        sidebarsContainer.style.height = '100px';
+        sidebarsContainer.style.opacity = '1';
+    } else {
+        sidebarsContainer.style.height = '0px';
+        sidebarsContainer.style.opacity = '0';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    positionSidebar();
+    window.addEventListener('resize', function() {
+        positionSidebar();
+    });
+});

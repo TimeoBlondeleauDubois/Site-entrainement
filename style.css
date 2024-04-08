@@ -115,6 +115,10 @@ body {
         display: none;
     }
 
+    #openSidebars {
+        display: none;
+    }
+
     .navbar .nav-links ul li:not(:first-child) {
         display: none;
     }
@@ -199,7 +203,7 @@ header.fixed {
 }
 
 .sidebar li:hover {
-    background-color: #dbdbdb;
+    background-color: lightblue;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     color: white;
@@ -274,7 +278,6 @@ header.fixed {
     font-size: 17px;
     margin-top: -2.5px;
     margin-bottom: -2.5px;
-    margin-right: 110px;
 }
 
 .first-section-wrapper {
@@ -321,6 +324,10 @@ header.fixed {
     .bouton-first-style {
         margin-left: 114px;
     }  
+
+    .bouton-style :active {
+        margin-right: 110px;
+    }
 }
 
 .first-section-paragraph {
@@ -343,6 +350,11 @@ header.fixed {
     .bouton-first-style {
         margin-left: 114px;
     }    
+}
+
+.bouton-style {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1277px) {
@@ -1856,3 +1868,51 @@ header.fixed {
 .footer-text-end-logo {
     margin-top: -60px;
 }
+
+.sidebars-container {
+    position: fixed;
+    top: 80px;
+    width: 162px;
+    background-color: white;
+    overflow: hidden;
+    transition: height 0.5s ease, opacity 0.5s ease; 
+    border-radius: 8px;
+    border: solid 1px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 0px;
+    opacity: 0;
+    margin-left: 60px;
+}
+
+.sidebars {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebars li {
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s; 
+    padding-bottom: -20px;
+}
+
+.sidebars li:hover {
+    background-color: lightblue; 
+    color: white;
+}
+
+.sidebars a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.bouton-style {
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
