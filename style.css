@@ -75,9 +75,14 @@ header {
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     display: flex;
-    background-color: #C8C8FF;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+header.fixed {
+    background-color: #000000b6;
+    transition: background-color 1s ease; 
 }
 
 @media screen and (max-width: 1456px) {
@@ -97,19 +102,31 @@ header {
 
 .bouton-style {
     border: 1px solid #3c1441;
-    background-image: -webkit-linear-gradient(30deg, #6b2175 50%, transparent 50%);
-    background-image: linear-gradient(30deg, #6b2175 50%, transparent 50%);
+    background-image: -webkit-linear-gradient(30deg, #45164b 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #45164b 50%, transparent 50%);
     background-size: 700px;
     background-repeat: no-repeat;
     background-position: 0%;
     transition: all 450ms ease-in-out;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 15px;
 }
 .bouton-style:hover {
     background-position: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+.bouton-style:active {
+    background-position: 0%;
+    padding: 17px 33px;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(30deg, #2f0f33 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #2f0f33 50%, transparent 50%);
+    font-size: 17px;
+    margin-top: -2.5px;
+    margin-bottom: -2.5px;
+    margin-right: 110px;
 }
 
 .first-section-wrapper {
@@ -608,6 +625,7 @@ header {
     font-size: 17px;
     box-shadow: 0 0 10px 0 #58145f inset, 0 0 20px 1px #58145f;
     border: 1px solid #58145f;
+    margin-left: -5px;
   }
 
 .second-section-bottom-container {
