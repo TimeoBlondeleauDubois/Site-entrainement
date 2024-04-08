@@ -26,6 +26,7 @@
     background-color: #EBEBFF;
     padding: 10px;
     text-align: center;
+    margin-bottom: -72px;
 }
 
 .banner p {
@@ -50,11 +51,66 @@
 }
 
 .navbar {
-    margin-top: 30px;
     margin-left: 74px;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+}
 
+.connecter {
+    display: flex;
+}
+
+header {
+    width: 1440px;
+    position: relative;
+    top: 100px;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    background-color: #C8C8FF;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1456px) {
+    header {
+        width: 98%;
+    }
+}
+
+.bouton-style {
+    padding: 16px 32px;
+    border-radius: 4px;
+    white-space: nowrap;
+    background-color: #3c1441;
+    margin-right: 113px;
+    margin-left: 20px;
+}
+
+.bouton-style {
+    border: 1px solid #3c1441;
+    background-image: -webkit-linear-gradient(30deg, #6b2175 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #6b2175 50%, transparent 50%);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: all 450ms ease-in-out;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+.bouton-style:hover {
+    background-position: 100%;
+    color: white;
+}
 
 .first-section-wrapper {
 	width: 1440px;
@@ -82,13 +138,11 @@
 
 .first-section-wrapper-left-container {
     background-color: #1362DD;
-    margin-left: 10px;
 }
 
 .first-section-paragraph {
     margin-right: 16px;
 }
-
 
 @media screen and (min-width: 1456px) {
     .first-section-title {
@@ -102,6 +156,10 @@
     .bouton-first-style {
         margin-left: 114px;
     }  
+}
+
+.first-section-paragraph {
+    color: white;
 }
 
 @media screen and (max-width: 1456px) {
@@ -160,9 +218,6 @@
         text-align: center;
     }
 }
-
-
-/*tel*/
 
 @media screen and (max-width: 1050px) {
     .first-section-wrapper {
@@ -230,8 +285,6 @@
     .man-picture {
         border-top-right-radius: none;
     }
-
-
 }
 
 @media screen and (min-width: 1050px) {
