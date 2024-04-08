@@ -16,3 +16,15 @@ function fixHeader() {
         banner.style.marginBottom = "-72px";
     }
 }
+
+document.getElementById('openSidebar').addEventListener('click', function(event) {
+    event.stopPropagation();
+    document.querySelector('.sidebar-container').style.right = '0';
+});
+
+document.addEventListener('click', function(event) {
+    var sidebarContainer = document.querySelector('.sidebar-container');
+    if (event.target !== sidebarContainer && !sidebarContainer.contains(event.target)) {
+        sidebarContainer.style.right = '-450px';
+    }
+});
