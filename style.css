@@ -1894,6 +1894,7 @@ header.fixed {
     padding: 10px;
     transition: background-color 0.3s, color 0.3s; 
     padding-bottom: -20px;
+    text-align: center;
 }
 
 .sidebars li:hover {
